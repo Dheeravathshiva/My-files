@@ -1,0 +1,23 @@
+ECr is Fully managed By aws
+we no need to managed and create the server to setup the repositery,every think taken care aws
+we just directly create a repositery , in those registery we can push and pull the images from the registery
+**** steps ****
+Launch the Ec2 Server
+1-->Build server & Install the Docker,Java,Maven and AWS CLI *****  run the mvn clean package****  coommand for the package
+1-->Deploy server  & Install the Docker and AWS CLI
+@@@@ Note to Install the AWS CLI @@@@ 
+---------------------------------
+1.sudo apt update -y
+2.sudo apt install unzip
+3.curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+4.unzip awscliv2.zip
+5.sudo ./aws/install
+-----------------------------
+Then create the IAM Role and attach to EC2Instance 
+----------------------------------------
+Then Create one Repositery from ECR
+
+BUILD THE DOCKER IMAGE IN THE BUILD SERVER
+PUSH THE DOCKER IMAGE  IN THE BUILD SERVER 
+
+THEN RUN THE RUN CONTAINER IN THE DEPLOY SERVER
