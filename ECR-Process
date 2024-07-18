@@ -8,11 +8,11 @@ Launch the Ec2 Server
 
 @@@@ Note to Install the AWS CLI @@@@ 
 ---------------------------------
-1.sudo apt update -y
-2.sudo apt install unzip
-3.curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-4.unzip awscliv2.zip
-5.sudo ./aws/install
+sudo apt update -y
+sudo apt install unzip
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
 
 -----------------------------
 Then create the IAM Role and attach to EC2Instance 
