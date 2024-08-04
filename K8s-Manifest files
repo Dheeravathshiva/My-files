@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: mynamespace
+  labels:
+    team: dev
+----------------------------------------
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mavenwebapplication
+  labels:
+    app: mavenwebapplication
+spec:
+  containers:
+  - name: mavenwebapplication
+    image: dheeravathshiva/mavenwebapplication:latest
+    ports:
+    - containerPort: 8080
+-------------------------------------------------------------------------------------
