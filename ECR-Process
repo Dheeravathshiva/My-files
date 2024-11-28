@@ -3,8 +3,8 @@ we no need to managed and create the server to setup the repositery,every think 
 we just directly create a repositery , in those registery we can push and pull the images from the registery
 **** steps ****
 Launch the Ec2 Server
-1-->Build server & Install the Docker,Java,Maven and AWS CLI *****  run the mvn clean package****  coommand for the package
-1-->Deploy server  & Install the Docker and AWS CLI
+1-->Build server & Install the Docker,Java,Maven and AWS CLI *****  run the mvn clean package ,It is going to create the Package****  coommand for the package.
+2-->Deploy server  & Install the Docker and AWS CLI
 
 @@@@ Note to Install the AWS CLI @@@@ 
 ---------------------------------
