@@ -1,0 +1,4 @@
+sudo apt-get update
+sudo apt install docker.io
+sudo usermod -aG docker ubuntu
+exit and ssh again
