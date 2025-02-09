@@ -1,0 +1,48 @@
+$JENKINS_HOME/
+├── config.xml               # Main Jenkins configuration file
+├── jobs/                    # Contains all job-specific configurations
+│   ├── <job-name>/          # Directory for each Jenkins job
+│   │   ├── config.xml       # Job configuration file
+│   │   ├── builds/          # Stores build histories
+│   │   ├── workspace/       # Stores workspace files for the job
+│   │   ├── nextBuildNumber  # Stores the next build number
+│   │   ├── lastStable       # Link to the last stable build
+│   │   ├── lastSuccessful   # Link to the last successful build
+│   │   ├── latest/          # Stores latest build info
+│   │   ├── logs/            # Logs for the job
+│   │   ├── builds/          # Individual build records
+│   │   │   ├── 1/           # Build #1
+│   │   │   │   ├── log      # Console output for the build
+│   │   │   │   ├── build.xml# Metadata for the build
+│   │   │   ├── 2/           # Build #2, and so on...
+│   │   │   ├── ...
+│   │   ├── triggers/        # Stores triggers for the job
+│   │   ├── fingerprints/    # Tracks artifacts across builds
+│   │   └── scm/             # SCM-related metadata (Git, SVN, etc.)
+│   ├── ...
+├── plugins/                 # Contains all installed plugins
+│   ├── <plugin-name>.jpi    # Jenkins plugin file
+│   ├── <plugin-name>/       # Extracted plugin directory
+│   ├── ...
+├── secrets/                 # Stores Jenkins security-related files
+│   ├── initialAdminPassword # Temporary admin password at first run
+│   ├── master.key           # Master key for encrypted secrets
+│   ├── hudson.util.Secret   # Secret key for encryption
+│   ├── ...
+├── users/                   # Stores user-related data
+│   ├── <username>/          # Directory for each user
+│   │   ├── config.xml       # User settings
+│   │   ├── ...
+│   ├── ...
+├── logs/                    # Stores Jenkins system logs
+│   ├── jenkins.log          # Main Jenkins log file
+│   ├── access.log           # Access logs
+│   ├── ...
+├── nodes/                   # Stores information about agent nodes
+│   ├── <node-name>/         # Configuration for each agent node
+│   │   ├── config.xml       # Agent configuration file
+│   │   ├── logs/            # Logs for the node
+│   │   ├── ...
+├── updates/                 # Stores update-related files
+├── war/                     # Jenkins WAR file storage
+└── fingerprints/            # Artifact tracking across builds
