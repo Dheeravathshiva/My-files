@@ -25,3 +25,10 @@ sudo apt install unzip
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
 sudo ./aws/install
+
+
+@@@@@
+
+aws eks update-kubeconfig --name <Name of the Cluster> --region <name of the region>
+is used to update the local kubeconfig file to enable interaction with an Amazon Elastic Kubernetes Service (EKS) cluster using kubectl.
+aws eks update-kubeconfig --name eks-demo --region ap-south-1
