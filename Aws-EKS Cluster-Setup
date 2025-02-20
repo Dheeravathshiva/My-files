@@ -5,3 +5,11 @@ https://s3.us-west-2.amazonaws.com/amazon-eks/cloudformation/2020-10-29/amazon-e
 Create IAM Role for the EKS Cluster and Attach the Cluster
 
 # then Create the EKS Cluster
+
+#create the iam roles for the worker node
+amazonEKSWorkernodepolicy
+amazaoneks_cni_policy
+amazonec2containerregisteryread only
+amazonebscsidriverpolcy
+
+
